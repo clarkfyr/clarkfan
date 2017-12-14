@@ -1,7 +1,6 @@
 click
 flask
 Flask
-os
 Flask-HTTPAuth
 Flask-SQLAlchemy
 gunicorn
