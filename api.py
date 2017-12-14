@@ -6,11 +6,17 @@ File that is the central location of code for your webserver.
 import requests
 import os
 from flask import Flask, render_template, request, flash
+from flask import send_file
 
 
 # Create application, and point static path (where static resources like images, css, and js files are stored) to the
 # "static folder"
 app = Flask(__name__, static_url_path="/static")
+
+
+@app.route('/resume')
+def show_resume():
+    return render_template("resume.html")
 
 
 @app.route('/')
