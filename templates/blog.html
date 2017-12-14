@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>{{ title|safe }}</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" type="text/css" href='/static/css/style.css'>
+  <script src="/static/js/weather.js"></script>
+
+</head>
+
+<body>
+  <header id="header">
+    <a href="/index">Homepage</a>
+    <a href="/about">About Me</a>
+    <a href="/contact">Contact Me</a>
+    <a href="/admin">Admin</a>
+
+  </header>
+
+  <h4 id="city">City</h4>
+  <h4 id="temp">Temperature</h4>
+  <h4 id="humi">Huminity</h4>
+
+  <h1>{{ title|safe }}</h1> {{ content|safe }}
+
+  <h2>Comment: </h2>
+
+  <div id="prevComment"></div><br />
+
+  <div id="commentStat"></div><br />
+
+  <form id="commentForm">
+    <label>Name: </label><br />
+    <input type="text" name="Name" size="30"><br />
+    <label>Message: </label><br />
+    <textarea name="Message" class="messageBox"></textarea><br />
+    <input type="submit" name="submit" value="submit"><br />
+  </form>
+
+  <footer id="footer">
+    <a href="/index">Homepage</a>
+    <a href="/about">About Me</a>
+    <a href="/contact">Contact Me</a>
+    <a href="/admin">Admin</a>
+
+  </footer>
+
+  <script src="/static/js/comment.js "></script>
+
+</body>
+
+</html>

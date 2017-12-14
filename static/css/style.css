@@ -1,0 +1,62 @@
+/*class*/
+.messageBox {
+    height: 300px;
+    width: 300px;
+}
+
+/*element*/
+body {
+    /*background-color: red;*/
+    background-image: url("bg_1.jpeg");
+}
+h1 {
+  color: blue
+}
+h2 {
+  color: black
+}
+p {
+  color: black
+}
+
+a {
+  color: black
+}
+
+
+/*id: #*/
+#header {
+  /*color: green;*/
+  font-size: 300%;
+  /*background-color: powderblue;*/
+}
+
+#footer {
+  /*color: orange;*/
+  font-size: 300%;
+  /*background-color: yellow;*/
+}
+
+#footer_bot {
+  /*color: orange;*/
+  font-size: 300%;
+  /*background-color: yellow;*/
+  position : absolute;
+  bottom : 0;
+  height : 60px;
+  margin-top : 40px;
+}
+
+#header a{
+color: red;
+}
+
+
+#footer_bot a{
+  font-style: italic;
+  color: blue;
+}
+
+#index_page {
+  background-image: url("bg_2.jpeg");
+}
